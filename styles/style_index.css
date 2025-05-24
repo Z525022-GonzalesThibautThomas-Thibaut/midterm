@@ -1,0 +1,117 @@
+body{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    background-color: #FDFDFD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 5vh;
+    font-family: 'Just Another Hand';
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.choices h2{
+    margin: 0px;
+}
+
+.choices a{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-decoration: none;
+    font-family: 'Itim';
+    color: #FFFFFF;
+    font-size: 30px;
+    border-radius: 15px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.choice{
+    border-radius: 15px;
+}
+
+.choice img{
+    border-radius: 15px;
+    width: 100%;
+}
+
+.dev{
+    background-color: #2E58E2;
+}
+.draw{
+    background-color: #F92525;
+}
+.music{
+    background-color: #29E635;
+}
+
+.dev img{
+    -webkit-mask-image: linear-gradient(transparent, black);
+    mask-image: linear-gradient(transparent, black);
+}
+
+.draw img{
+    -webkit-mask-image: linear-gradient(transparent, black);
+    mask-image: linear-gradient(transparent, black);
+}
+
+.music img{
+    -webkit-mask-image: linear-gradient(transparent, black);
+    mask-image: linear-gradient(transparent, black);
+}
+
+.choices .overall_dev{
+    animation-name: appearance_dev;
+    animation-duration: 1.25s;
+    animation-delay: 0s;
+}
+.choices .overall_draw{
+    animation-name: appearance_draw;
+    animation-duration: 1.75s;
+    animation-delay: 0s;
+}
+.choices .overall_music{
+    animation-name: appearance_music;
+    animation-duration: 2.25s;
+    animation-delay: 0s;
+}
+
+@keyframes appearance_dev {
+    0%   {opacity: 0;}
+    20%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes appearance_draw {
+    0%   {opacity: 0;}
+    35%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes appearance_music {
+    0%   {opacity: 0;}
+    50%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media screen and (min-width: 1100px){
+    .choices{
+        flex-direction: row;
+    }
+    .choices a{
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 25px;
+    }
+}
