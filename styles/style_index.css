@@ -2,7 +2,6 @@ body{
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
-    background-color: #FDFDFD;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,13 +46,13 @@ h1{
 }
 
 .dev{
-    background-color: #2E58E2;
+    background-color: var(--main-blue);
 }
 .draw{
-    background-color: #F92525;
+    background-color: var(--main-red);
 }
 .music{
-    background-color: #29E635;
+    background-color: var(--main-green);
 }
 
 .dev img{

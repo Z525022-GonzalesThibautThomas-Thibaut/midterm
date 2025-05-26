@@ -1,3 +1,15 @@
+:root {
+    --pseudo-white: #FDFDFD;
+
+    --main-blue: #2E58E2;
+    --hard-blue: #123096;
+    --soft-blue: #cbd6fc;
+
+    --main-red : #F92525;
+
+    --main-green : #29E635;
+}
+
 @font-face {
     font-family: "Just Another Hand";
     src: url("../fonts/JustAnotherHand-Regular.ttf") format("truetype");
@@ -6,9 +18,13 @@
     font-family: "Itim";
     src: url("../fonts/Itim-Regular.otf") format("opentype");
 }
+@font-face {
+    font-family: "Alkia";
+    src: url("../fonts/Alkia.ttf") format("truetype");
+}
 
 body{
-    background-color: #FDFDFD;
+    background-color: var(--pseudo-white);
 }
 
 a.home_link{
@@ -29,8 +45,6 @@ a.home_link{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d6d6d6;
-    border-color: #acacac;
 }
 .home img{
     width: 50px;
