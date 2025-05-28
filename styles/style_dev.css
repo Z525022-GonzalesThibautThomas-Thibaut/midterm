@@ -153,6 +153,9 @@
     border-bottom-style: solid;
     border-top-style: solid;
 }
+.content .data_analysis{
+    margin-bottom: 100px;
+}
 
 .content .website, .content .data_analysis{
     margin-top: 5vh;
