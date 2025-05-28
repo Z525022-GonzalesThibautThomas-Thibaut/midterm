@@ -1,5 +1,7 @@
+/*GENERAL VARIABLES*/
 :root {
     --pseudo-white: #FDFDFD;
+    --main-grey: #e7e7e7;
 
     --main-blue: #1f5a91;
     --hard-blue: #012c54;
@@ -27,11 +29,18 @@
     font-family: "Alkia";
     src: url("../fonts/Alkia.ttf") format("truetype");
 }
+/*END OF GENERAL VARIABLES*/
+
 
 body{
     background-color: var(--pseudo-white);
+    padding: 0;
+    margin: 0;
 }
 
+
+
+/*HOME BUTTON*/
 a.home_link{
     width: 100px;
     height: 100px;
@@ -59,11 +68,94 @@ a.home_link{
 
 @media screen and (min-width: 1100px){
     a.home_link{
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
     .home img{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 }
+/*END OF HOME BUTTON*/
+
+/*INTRO STYLE + BANNER*/
+.content{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.content h1{
+    font-family: 'Just Another Hand';
+    font-weight: 500;
+    font-size: 90px;
+}
+.content h2{
+    font-family: 'Just Another Hand';
+    font-weight: 500;
+    font-size: 48px;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+.content p{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: left;
+    font-family:'Alkia';
+    font-weight: 100;
+    font-size: 22px;
+}
+.background_banner{
+    position: absolute;
+    width: 150vw;
+    height: 25vh;
+    min-height: 15vw;
+    max-height: 50vw;
+    left: -25vw;
+    z-index: -1;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    transform: rotate(-5deg);
+}
+
+.content .intro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+.content .intro h2{
+    margin-left: auto;
+    padding-right: 10vw;
+}
+.content .intro p{
+    color: var(--pseudo-white);
+}
+
+/*ADJUSTEMENT OF BANNER HEIGHT FOR RESPONSIVE*/
+@media screen and (max-width: 1350px) and (min-height : 900px){
+    .background_banner{
+        height: 45vh;
+        max-height: 60vw;
+    }
+}
+@media screen and (max-width: 650px) and (min-height : 900px){
+    .background_banner{
+        height: 80vh;
+        max-height: 120vw;
+    }
+    
+}
+@media screen and (max-height: 850px){
+    .background_banner{
+        min-height: 35vw;
+        max-height: 50vw;
+    }
+}
+/*END OF INTRO STYLE + BANNER*/
+

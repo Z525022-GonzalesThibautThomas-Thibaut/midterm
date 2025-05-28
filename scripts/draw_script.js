@@ -1,14 +1,14 @@
 const carousel = document.querySelector('.carousel-container');
 const track = document.querySelector('.carousel-track');
-const slides = Array.from(document.querySelectorAll('.carousel-item'));
+const slides = Array.from(document.querySelectorAll('.carousel-item'));//We make a array whith our items (images)
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
 let currentSlide = 0;
 
 function updateCarousel() {
-  const slideWidth = carousel.clientWidth;
-  track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  const slideWidth = carousel.clientWidth;//we get the width of our carousel
+  track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;//we translateX to change the current image
 }
 
 prevButton.addEventListener('click', () => {
@@ -31,4 +31,4 @@ nextButton.addEventListener('click', () => {
     updateCarousel();
 });
 
-window.addEventListener('resize', updateCarousel);
+window.addEventListener('resize', updateCarousel);//we update the carousel if there is a resize

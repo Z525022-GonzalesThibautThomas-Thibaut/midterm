@@ -1,3 +1,4 @@
+/*STYLE OF THE PAGE*/
 body{
     padding-left: 5%;
     padding-right: 5%;
@@ -6,10 +7,28 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
+.personal_infos{
+    font-family: 'Just Another Hand';
+    font-weight: 500;
+    font-size: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.personal_infos img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
 h1{
     padding-left: 30%;
     padding-right: 30%;
-    padding-top: 5vh;
+    padding-top: 20px;
     font-family: 'Just Another Hand';
     font-weight: 500;
     font-size: 64px;
@@ -19,6 +38,7 @@ h1{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 .choices h2{
     margin: 0px;
@@ -29,11 +49,11 @@ h1{
     margin-right: 10%;
     text-decoration: none;
     font-family: 'Itim';
-    color: #FFFFFF;
+    color: var(--pseudo-white);
     font-size: 30px;
     border-radius: 15px;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .choice{
@@ -70,6 +90,34 @@ h1{
     mask-image: linear-gradient(transparent, black);
 }
 
+footer{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: var(--main-grey);
+    font-family: Alkia;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 1100px){
+    .choices{
+        flex-direction: row;
+    }
+    .choices a{
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 25px;
+    }
+}
+/*END OF STYLE OF THE PAGE*/
+
+/*ANIMATION OF CHOICES*/
 .choices .overall_dev{
     animation-name: appearance_dev;
     animation-duration: 1.25s;
@@ -101,16 +149,7 @@ h1{
     50%   {opacity: 0;}
     100% {opacity: 1;}
 }
+/*END OF ANIMATION OF CHOICES*/
 
-@media screen and (min-width: 1100px){
-    .choices{
-        flex-direction: row;
-    }
-    .choices a{
-        margin-left: 2%;
-        margin-right: 2%;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        font-size: 25px;
-    }
-}
+
+

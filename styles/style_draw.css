@@ -1,86 +1,17 @@
-body{
-    padding: 0;
-    margin: 0;
-}
-
 .home{
     background-color: var(--soft-red);
     border-color: var(--hard-red);
 }
-
-.content{
-    margin-top: 75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.content h1{
-    font-family: 'Just Another Hand';
-    font-weight: 500;
-    font-size: 90px;
-}
-.content h2{
-    font-family: 'Just Another Hand';
-    font-weight: 500;
-    font-size: 48px;
-    margin-top: 1vh;
-    margin-bottom: 0;
-}
-.content p{
-    padding-left: 10vw;
-    padding-right: 10vw;
-    text-align: left;
-    font-family:'Alkia';
-    font-weight: 100;
-    font-size: 22px;
-}
 .background_banner{
-    position: absolute;
-    width: 150vw;
-    height: 35vh;
-    min-height: 30vw;
-    max-height: 40vw;
-    left: -25vw;
     background-color: var(--main-red);
-    z-index: -1;
-    border-bottom-width: 10px;
-    border-top-width: 10px;
-    border-bottom-style: solid;
-    border-top-style: solid;
     border-color: var(--hard-red);
-    transform: rotate(-5deg);
-}
-
-.content .intro{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5vh;
 }
 .content .intro h2{
-    margin-left: auto;
-    padding-right: 10vw;
     color: var(--soft-red);
 }
-.content .intro p{
-    color: var(--pseudo-white);
-}
 
-@media screen and (max-width: 750px) and (min-height : 900px){
-    .background_banner{
-        height: 45vh;
-        max-height: 60vw;
-    }
-}
-@media screen and (min-width: 1200px){
-    .background_banner{
-        min-height: 15vw;
-    }
-}
 
+/*STYLE OF CAROUSEL*/
 .carousel-container {
     position: relative;
     overflow: hidden;
@@ -138,4 +69,5 @@ body{
 .next {
     right: 10px;
 }
+/*END OF STYLE OF CAROUSEL*/
 
