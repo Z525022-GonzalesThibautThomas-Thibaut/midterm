@@ -123,10 +123,12 @@ body{
     opacity: 75%;
     color: var(--pseudo-white);
     border: none;
-    padding: 10px;
     font-size: 24px;
     cursor: pointer;
     z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
 }
   
 .prev {

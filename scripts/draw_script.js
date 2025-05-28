@@ -31,4 +31,4 @@ nextButton.addEventListener('click', () => {
     updateCarousel();
 });
 
-window.addEventListener('resize', updateCarousel); // Pour que ça reste centré au redimensionnement
+window.addEventListener('resize', updateCarousel);
