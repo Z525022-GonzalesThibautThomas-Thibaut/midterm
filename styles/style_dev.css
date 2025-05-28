@@ -1,6 +1,8 @@
 body{
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+    width: 100vw;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -65,7 +67,7 @@ body::-webkit-scrollbar {
     font-size: 90px;
 }
 
-.content .intro, .content .website, .content .game{
+.content .website, .content .game, .content .data_analysis{
     display: flex;
     flex-direction: column;
     border-bottom-width: 10px;
@@ -99,12 +101,27 @@ body::-webkit-scrollbar {
 
 
 
-
+.background_banner{
+    position: absolute;
+    width: 150vw;
+    height: 60vh;
+    max-height: 50vw;
+    left: -25vw;
+    background-color: var(--main-blue);
+    z-index: -1;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-color: var(--hard-blue);
+    transform: rotate(-5deg);
+    overflow-x: hidden;
+}
 
 .content .intro{
+    display: flex;
+    flex-direction: column;
     margin-top: 5vh;
-    background-color: var(--main-blue);
-    border-color: var(--hard-blue);
 }
 .content .intro h2{
     margin-left: auto;
@@ -133,17 +150,17 @@ body::-webkit-scrollbar {
 
 
 
-.content .website{
+.content .website, .content .data_analysis{
     margin-top: 5vh;
     background-color: var(--soft-blue);
     border-color: var(--hard-blue);
 }
-.content .website h2{
+.content .website h2, .content .data_analysis h2{
     padding-left: 10vw;
     color: var(--main-blue);
     text-align: left;
 }
-.content .website p{
+.content .website p, .content .data_analysis p{
     color: var(--hard-blue);
 }
 .website .images{
@@ -234,32 +251,12 @@ body::-webkit-scrollbar {
         z-index: 2;
     }
 
-    .content .intro{
-        background-color: #ffffff00;
-        border-bottom-width: 0;
-        border-top-width: 0;
-    }
-    .background_banner{
-        position: absolute;
-        width: 150vw;
-        height: 60vh;
-        left: -25vw;
-        background-color: var(--main-blue);
-        z-index: -1;
-        border-bottom-width: 10px;
-        border-top-width: 10px;
-        border-bottom-style: solid;
-        border-top-style: solid;
-        border-color: var(--hard-blue);
-    }
-    .intro .background_banner{
-        transform: rotate(-5deg);
-    }
+    
 
-    .content .website, .content .game{
+    .content .website, .content .game, .content .data_analysis{
         margin-top: 30vh;
     }
-    .content .website h2, .content .game h2{
+    .content .website h2, .content .game h2, .content .data_analysis h2{
         padding-top: 5vh;
     }
 }

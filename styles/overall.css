@@ -1,13 +1,18 @@
 :root {
     --pseudo-white: #FDFDFD;
 
-    --main-blue: #2E58E2;
-    --hard-blue: #123096;
-    --soft-blue: #cbd6fc;
+    --main-blue: #1f5a91;
+    --hard-blue: #012c54;
+    --soft-blue: #78b3eb;
 
-    --main-red : #F92525;
+    --main-red : #e82a3d;
+    --hard-red : #99111e;
+    --soft-red : #f28590;
 
-    --main-green : #29E635;
+    --main-green : #41ab5d;
+    --hard-green : #005931;
+    --soft-green : #a0d99a;
+
 }
 
 @font-face {
@@ -49,4 +54,15 @@ a.home_link{
 .home img{
     width: 50px;
     height: 50px;
+}
+
+@media screen and (min-width: 1100px){
+    a.home_link{
+        width: 60px;
+        height: 60px;
+    }
+    .home img{
+        width: 30px;
+        height: 30px;
+    }
 }
