@@ -1,8 +1,6 @@
 body{
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
-    width: 100vw;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -54,11 +52,13 @@ body::-webkit-scrollbar {
 }
 
 .content{
-    margin-top: 150px;
+    margin-top: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .content h1{
@@ -115,7 +115,6 @@ body::-webkit-scrollbar {
     border-top-style: solid;
     border-color: var(--hard-blue);
     transform: rotate(-5deg);
-    overflow-x: hidden;
 }
 
 .content .intro{

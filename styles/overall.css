@@ -39,7 +39,8 @@ a.home_link{
     border-radius: 100%;
     position: fixed;
     top: 10px;
-    left: calc(50% - 50px)
+    left: calc(50% - 50px);
+    z-index: 10;
 }
 .home{
     width: 100%;
