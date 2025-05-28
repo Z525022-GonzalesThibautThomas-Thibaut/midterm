@@ -133,6 +133,12 @@
         max-height: 120vw;
     }
 }
+@media screen and (max-height: 850px){
+    .background_banner{
+        min-height: 35vw;
+        max-height: 50vw;
+    }
+}
 /*END OF BACKGROUND BANNER + INTRO*/
 
 
