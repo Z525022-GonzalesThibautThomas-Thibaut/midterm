@@ -221,6 +221,12 @@
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
+
+.website img, .game img{
+    border-width: 10px ;
+    border-style: solid;
+    border-color: var(--hard-blue);
+}
 /*END OF SPECIFIC STYLE OF DEV PAGE*/
 
 
